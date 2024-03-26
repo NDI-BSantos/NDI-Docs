@@ -1,0 +1,3 @@
+# NDI HX3 h.264 (8bit 4:2:0)
+
+<table data-full-width="true"><thead><tr><th>Resolution Framerate</th><th>Maximum Bandwidth Mbps</th><th>Proxy Resolution Framerate</th><th>Maximum Bandwidth Mbps</th></tr></thead><tbody><tr><td>1080 50i</td><td>26.00</td><td>640x360 25/30p</td><td>3.00</td></tr><tr><td>1080 60i</td><td>31.00</td><td>640x360 25/30p</td><td>3.00</td></tr><tr><td>1080 50p</td><td>52.00</td><td>640x360 25/30p</td><td>3.00</td></tr><tr><td>1080 60p</td><td>62.00</td><td>640x360 25/30p</td><td>3.00</td></tr><tr><td>3840x2160 50p</td><td>92.00</td><td>640x360 25/30p</td><td>3.00</td></tr><tr><td>3840x2160 60p</td><td>110.00</td><td>640x360 25/30p</td><td>3.00</td></tr></tbody></table>
