@@ -76,7 +76,7 @@ We refer to this next iteration of the world video as the **videoverse:** _a con
 
 <div data-full-width="false">
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

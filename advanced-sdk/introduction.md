@@ -15,7 +15,7 @@ layout:
 # Introduction
 
 {% hint style="warning" %}
-This documentation refers to the **NDI SDK**, which is open to use and explore, and available only for software. If you're looking to integrate the full features and potential of our connectivity tech into both software and hardware, including support for our most advanced codecs, and maximum personalization of all connection settings, you should [**request NDI Advanced**](https://ndi.video/tech).
+This documentation refers to the **NDI Advanced SDK**, which is part of **NDI Advanced**, our commercial license available for hardware and software integration. If you want to integrate the full features and potential of our connectivity tech, including support for our most advanced codecs and maximum personalization of all connection settings, you can [**request NDI Advanced**](https://ndi.video/tech).
 {% endhint %}
 
 This documentation is paramount for developers and integrators seeking to consistently embed the full potential of NDI technology into their products.&#x20;

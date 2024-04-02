@@ -2,7 +2,7 @@
 
 To clarify which files may be distributed with your applications, the following are the files and the distribution terms under which they may be used for the SDK.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Note that open-source projects have the right to include the header files within their distributions, which may then be used with dynamic loading of the NDI libraries.
 {% endhint %}
 
