@@ -6,7 +6,7 @@
 
 ## 📃 White Paper
 
-* [Introduction](white-paper/introduction.md)
+* [Introduction](<README (1).md>)
 * [Discovery and Registration](white-paper/discovery-and-registration/README.md)
   * [mDNS](white-paper/discovery-and-registration/mdns.md)
   * [Discovery Service](white-paper/discovery-and-registration/discovery-service.md)

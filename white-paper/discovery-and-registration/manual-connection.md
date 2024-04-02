@@ -16,7 +16,7 @@ layout:
 
 One approach to manually interconnect NDI devices is to specify the IP[^1] address of the transmitter in the receiver.
 
-![Screenshot of NDI Access Manager tool](../../.gitbook/assets/2.png)
+![Screenshot of NDI Access Manager tool](<../../.gitbook/assets/2 (1).png>)
 
 In Windows and MacOS, this can be achieved using the NDI Access Manager in the External Sources feature. Several NDI hardware decoders also support this functionality.
 
