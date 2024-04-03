@@ -9,11 +9,11 @@
 #### SDK
 
 * Support for 16-bit color formats improved (P216/PA16).&#x20;
-* There is a new specification for NDI HDR metadata (read the new dedicated [HDR section](hdr.md) in the NDI SDK for more details).&#x20;
+* There is a new specification for NDI HDR metadata (read the new dedicated [**HDR section**](../sdk/hdr.md) in the NDI SDK for more details).&#x20;
 * New receiver formats permit SpeedHQ pass-through with UYVY/P216 video.&#x20;
 * HDR example code samples are provided with NDI SDK.&#x20;
-* The NDI Advanced SDK includes a new NDI Bridge Utility for hardware (currently available for Linux), with comprehensive guidance on its use.&#x20;
-* NDI Recorder utility enhanced to capture NDI HDR streams.&#x20;
+* The NDI Advanced SDK includes a new [**NDI Bridge Utility**](command-line-tools/#ndi-bridge-utility-for-hardware) for hardware (currently available for Linux), with comprehensive guidance on its use.&#x20;
+* [**NDI Recorder utility**](command-line-tools/#recording) enhanced to capture NDI HDR streams.&#x20;
 
 {% hint style="info" %}
 Please note: The **NDI Advanced SDK** licensing scheme has been enhanced. To use NDI 6.0 features, advanced SDK users will need a new License ID (which replaces the former Vendor ID). Please contact [support@ndi.video](mailto:support@ndi.video)
@@ -21,32 +21,34 @@ Please note: The **NDI Advanced SDK** licensing scheme has been enhanced. To use
 
 #### SDK - Fixes
 
-Improved audio synchronization with NDI Frame Sync API.
+Improved audio synchronization with [NDI Frame Sync API](../sdk/ndi-recv/#frame-synchronization).
 
 #### NDI Tools
 
-* **A new** **NDI Router** tool for macOS has been released.&#x20;
+* **A new** [**NDI Router tool for macOS**](https://ndi.video/tools/ndi-router-mac/) has been released.&#x20;
 
 #### NDI Tools - HDR&#x20;
 
-* NDI Test Patterns now supports HDR patterns (macOS and Windows).&#x20;
-* NDI Studio Monitor now supports displaying HDR content in PQ and HLG (Windows).&#x20;
-* NDI Studio Monitor (Windows) has been enhanced to capture NDI HDR streams.&#x20;
-* NDI Bridge has received 10-bit HEVC transcoding and HDR pass-through.&#x20;
-* NDI Screen Capture HX (Windows) has received support for HDR screens and 10-bit HEVC.&#x20;
-* NDI Analysis in Frame Checker mode will now output HDR color information if present.&#x20;
+* [NDI Test Patterns](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/test-patterns) now supports HDR patterns (macOS and Windows).&#x20;
+* [NDI Studio Monitor ](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/studio-monitor)now supports displaying HDR content in PQ and HLG (Windows).&#x20;
+* [NDI Studio Monitor (Windows)](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/studio-monitor) has been enhanced to capture NDI HDR streams.&#x20;
+* [NDI Bridge](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/bridge) has received 10-bit HEVC transcoding and HDR pass-through.&#x20;
+* [NDI Screen Capture HX (Windows)](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/screen-capture-hx) has received support for HDR screens and 10-bit HEVC.&#x20;
+* [NDI Analysis](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/cli-tools/analysis) in Frame Checker mode will now output HDR color information if present.&#x20;
 
 #### NDI Tools - More
 
-* NDI Video Monitor (macOS) now includes new KVM support.&#x20;
+* [NDI Video Monitor (macOS)](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-mac/video-monitor) now includes new KVM support.&#x20;
 * The NDI Launcher app adds a one-click link to extensive online Docs & Guides.&#x20;
 
 #### NDI Tools - Fixes&#x20;
 
-* Reduced latency from NDI Screen Capture HX (Windows).&#x20;
-* Resolved NDI Bridge Local mode issue when handling a source that has multiple machine names.
-* NDI Bridge has been enhanced to leverage the increased number of encoders supported by NVIDIA GeForce cards (may require NVIDIA driver update).&#x20;
-* Resolved an NDI Webcam audio driver stability issue.
+* Reduced latency from [NDI Screen Capture HX (Windows)](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/screen-capture-hx).&#x20;
+* Resolved [NDI Bridge](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/bridge) Local mode issue when handling a source that has multiple machine names.
+* [NDI Bridge](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/bridge) has been enhanced to leverage the increased number of encoders supported by NVIDIA GeForce cards (may require NVIDIA driver update).&#x20;
+* Resolved an [NDI Webcam](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/webcam-input) audio driver stability issue.
+
+
 
 ### NDI 5.6.1
 
