@@ -10,7 +10,7 @@ Please pay extra attention to the value types, as it is important that these mat
 
 
 
-<table data-header-hidden data-full-width="true"><thead><tr><th width="435"></th><th></th></tr></thead><tbody><tr><td><pre class="language-json" data-line-numbers data-full-width="false"><code class="lang-json">{
+<table data-header-hidden data-full-width="false"><thead><tr><th width="438"></th><th></th></tr></thead><tbody><tr><td><pre class="language-json" data-line-numbers data-full-width="false"><code class="lang-json">{
    "ndi": {
       "machinename": "Hello World",
 </code></pre></td><td>This is an option that allows you to change how your machine is identified on the network using NDI, overriding the local name of the machine. This option should be used with great care since a clash of machine names on the network is incompatible with mDNS and can cause all other sources not to work correctly. When using this, it is essential to ensure that all machine names on the network are unique. We recommend avoiding using this parameter when at all possible.</td></tr><tr><td><pre class="language-json" data-line-numbers><code class="lang-json">"send": {
