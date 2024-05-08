@@ -4,6 +4,10 @@
 
 * [Index](README.md)
 
+## 📝 Release Notes
+
+* [Release Notes](release-notes/release-notes.md)
+
 ## 📃 White Paper
 
 * [Introduction](<README (1).md>)
