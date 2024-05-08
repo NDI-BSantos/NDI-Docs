@@ -3,10 +3,9 @@
 ## 📂 DOCS
 
 * [Index](README.md)
+* [Release Notes](docs/release-notes.md)
 
 ## 📝 Release Notes
-
-* [Release Notes](release-notes/release-notes.md)
 
 ## 📃 White Paper
 
