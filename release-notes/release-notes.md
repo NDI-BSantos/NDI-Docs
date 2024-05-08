@@ -4,6 +4,29 @@
 **These release notes refer to changes in our complete technology, including the SDKs, NDI Tools, and any other items. Take your time to comb through the documentation and decide what is more relevant for your specific context.**
 {% endhint %}
 
+### NDI 6.0.1
+
+#### **NDI Tools - HDR**
+
+* The [NDI output plugin for VLC](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/plugins/ndi-for-vlc) now includes HDR support
+
+#### NDI Tools - Fixes
+
+* Corrected rendering issue when importing custom images from older versions of [NDI Test Patterns](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/test-patterns) on Windows.
+* Resolved a potential crash in [NDI Remote](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/remote).
+* Resolved a minor talkback audio issue in [NDI Remote](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/remote).
+* Added a firewall exception rule for the [NDI Remote](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-windows/remote) app.
+* Resolved an issue with loading the [NDI output plugin for Final Cut Pro](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/plugins/ndi-output-for-final-cut-pro) on newer macOS versions.
+* [NDI Video Monitor](https://app.gitbook.com/s/RNgRFpW0QELCFWgOTQfu/ndi-tools-for-mac/video-monitor) on Mac was not playing audio.
+* Ensured correct permissions were set on the NDI Runtime installer on MacOS.
+* Resolved an issue where the NDI Tools registration state was not being saved correctly.
+
+#### **NDI SDK - Fixes**
+
+* Resolved a source limitation issue with the [NDI Discovery server](../white-paper/discovery-and-registration/discovery-service.md) running on Linux.
+* Addressed an issue with NDI Frame Sync, restoring correct behavior in audio capture.
+* Fixed a potential threading issue when loading and unloading the NDI library on Windows.
+
 ## NDI 6.0.0
 
 #### SDK
