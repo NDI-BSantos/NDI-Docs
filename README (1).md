@@ -68,7 +68,7 @@ Looking into the next steps of video-based industries, you find innovation and t
 
 The future of video is one in which content is transferred easily and efficiently via the Internet Protocol (IP). This global network will largely supplant and become far too decentralized and open-ended for current industry-specific connection formats like HDMI, SDI, etc., in any type of video workflow or production pipeline.&#x20;
 
-We refer to this next iteration of the world video as the **videoverse:** _a connected global environment that contains all devices, technologies, services, and businesses based on creating, sharing, coordinating, and consuming video, either by humans or machines.​_
+This is the next iteration of the world of video, audio, and media: _a connected global environment that contains all devices, technologies, services, and businesses based on creating, sharing, coordinating, and consuming media, either by humans or machines.​_
 
 **NDI is the technology connecting it.**
 
@@ -90,7 +90,7 @@ But the fact is that, as with all technology-driven revolutions, the existing wa
 
 <table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Dependency on equipment and budget</strong></td><td>Currently, the number and quality of connections are very dependent on cost, available cables, infrastructure, and bandwidth.</td></tr><tr><td><strong>Complexity and need for specialized expertise</strong></td><td>Most connectivity solutions require networking expertise to set up and troubleshoot. They struggle to provide a simple, user-friendly experienc</td></tr><tr><td><strong>Too many working connectivity protocols</strong></td><td>There can be many protocols in the same workflow, requiring a lot of conversion and understanding of different technologies. <br><br>Alternatively, some products only operate in closed ecosystems.</td></tr></tbody></table>
 
-### NDI is removing the limits to video connectivity.
+### NDI is removing the limits of video connectivity.
 
 <table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>High efficiency</strong></td><td>We develop the most advanced video connectivity formats; and allow productions to scale without scaling costs.</td></tr><tr><td><strong>Plug &#x26; play</strong></td><td>We guarantee that any NDI-enabled product is easy to operate, even without networking knowledge, and always works seamlessly.</td></tr><tr><td><strong>Interoperability</strong></td><td>We unlock complete connectivity with a growing ecosystem of NDI-enabled and compatible devices, making NDI the only protocol you’ll need to connect with multiple products, device types, and brand ecosystems.</td></tr></tbody></table>
 
