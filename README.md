@@ -8,7 +8,8 @@ description: >-
 # Index
 
 * :page\_with\_curl: [**White Paper**](broken-reference)
-* :tools: [**SDK**](broken-reference)
+* 🔨 [**SDK**](broken-reference)
+* :tools: [**Advanced SDK**](broken-reference)
 * :information\_source: [**Glossary**](broken-reference)
 
 If you find any inconsistent or unclear information, you can always [reach out to our team. ](https://ndi.video/resources/get-in-touch/)
