@@ -163,7 +163,7 @@ NDI standardizes the control of PTZ cameras. An NDI receiver will automatically 
 
 <div align="left" data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt="" width="203"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt="" width="203"><figcaption></figcaption></figure>
 
 </div>
 
@@ -280,7 +280,7 @@ This message is very useful, allowing every receiver to ‘know’ whether its s
 
 To illustrate, consider a sender named “My Source A” sending to two destinations, “Switcher” and “Multi-viewer”. When “Switcher” places “My Source A” on program out, a tally message is sent from “Switcher” to “My Source A”. Thus, the source ‘knows’ it is visible on program output. At this point, it will echo its tally state to “Multi-viewer” (and “Switcher”) so that the receiver is aware that “My Source A” is on program out. This functionality is used in the NDI tools Studio Monitor application to display an indicator when the source monitored has its tally state set.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Frame Synchronization
 

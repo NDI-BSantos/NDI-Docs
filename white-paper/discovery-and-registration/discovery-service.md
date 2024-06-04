@@ -18,7 +18,7 @@ NDI Discovery server is a command line application available for Windows, MacOS,
 
 When there is a Discovery server, NDI applications will use both mDNS and the Discovery server to find and receive sources on the local network that are not on machines configured to use discovery.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 For senders, if a Discovery service is specified, then mDNS will not be used; these sources will only be visible to other finders and receivers configured to use the Discovery server.
 
@@ -52,7 +52,7 @@ Using multiple servers and subnets allows sources to be organized into distinct 
 
 **Here is an example** that explains how multiple Discovery Servers can be used for control device discoverability:
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 Spinning up or shutting down the Discovery Servers with IP Address 192.168.25.243 - 192.168.25.244 - 192.168.25.245 will turn on or off discoverability between the 3 NDI areas.
 

@@ -76,7 +76,7 @@ This is the next iteration of the world of video, audio, and media: _a connected
 
 <div data-full-width="false">
 
-<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

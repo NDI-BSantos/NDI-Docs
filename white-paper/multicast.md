@@ -29,7 +29,7 @@ While video and audio data are delivered to the network via multicast delivery, 
 
 Basic multicast settings can be enabled in the NDI Access Manager on Windows and Mac machines.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>Screenshot of NDI Access Manager Tool</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>Screenshot of NDI Access Manager Tool</p></figcaption></figure>
 
 In Linux, Multicast can be configured in the NDI configuration file located in the home directory of the effective user: "ndi-config.v1.json"
 

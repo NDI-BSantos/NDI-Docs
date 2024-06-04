@@ -23,7 +23,7 @@
 
 #### **NDI SDK - Fixes**
 
-* Resolved a source limitation issue with the [NDI Discovery server](../white-paper/discovery-and-registration/discovery-service.md) running on Linux.
+* Resolved a source limitation issue with the [NDI Discovery server](../../white-paper/discovery-and-registration/discovery-service.md) running on Linux.
 * Addressed an issue with NDI Frame Sync, restoring correct behavior in audio capture.
 * Fixed a potential threading issue when loading and unloading the NDI library on Windows.
 
@@ -32,11 +32,11 @@
 #### SDK
 
 * Support for 16-bit color formats improved (P216/PA16).&#x20;
-* There is a new specification for NDI HDR metadata (read the new dedicated [**HDR section**](../sdk/hdr.md) in the NDI SDK for more details).&#x20;
+* There is a new specification for NDI HDR metadata (read the new dedicated [**HDR section**](../../sdk/hdr.md) in the NDI SDK for more details).&#x20;
 * New receiver formats permit SpeedHQ pass-through with UYVY/P216 video.&#x20;
 * HDR example code samples are provided with NDI SDK.&#x20;
-* The NDI Advanced SDK includes a new [**NDI Bridge Utility**](../advanced-sdk/command-line-tools/#ndi-bridge-utility-for-hardware) for hardware (currently available for Linux), with comprehensive guidance on its use.&#x20;
-* [**NDI Recorder utility**](../advanced-sdk/command-line-tools/#recording) enhanced to capture NDI HDR streams.&#x20;
+* The NDI Advanced SDK includes a new [**NDI Bridge Utility**](../../advanced-sdk/command-line-tools/#ndi-bridge-utility-for-hardware) for hardware (currently available for Linux), with comprehensive guidance on its use.&#x20;
+* [**NDI Recorder utility**](../../advanced-sdk/command-line-tools/#recording) enhanced to capture NDI HDR streams.&#x20;
 
 {% hint style="info" %}
 Please note: The **NDI Advanced SDK** licensing scheme has been enhanced. To use NDI 6.0 features, advanced SDK users will need a new License ID (which replaces the former Vendor ID). Please contact [support@ndi.video](mailto:support@ndi.video)
@@ -44,7 +44,7 @@ Please note: The **NDI Advanced SDK** licensing scheme has been enhanced. To use
 
 #### SDK - Fixes
 
-Improved audio synchronization with [NDI Frame Sync API](../sdk/ndi-recv/#frame-synchronization).
+Improved audio synchronization with [NDI Frame Sync API](../../sdk/ndi-recv/#frame-synchronization).
 
 #### NDI Tools
 

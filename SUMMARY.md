@@ -3,7 +3,8 @@
 ## 📂 DOCS
 
 * [Index](README.md)
-* [Release Notes](release-notes/release-notes.md)
+* [Release Notes](docs/release-notes/README.md)
+  * [Unreal Engine SDK](docs/release-notes/unreal-engine-sdk.md)
 
 ## 📃 White Paper
 
@@ -24,8 +25,8 @@
 * [Bandwidth](white-paper/bandwidth/README.md)
   * [NDI High Bandwidth based on SpeedHQ2 (8bit 4:2:2)](white-paper/bandwidth/ndi-high-bandwidth-based-on-speedhq2-8bit-4-2-2.md)
   * [NDI High Bandwidth based on SpeedHQ7 (8bit 4:2:2:4)](white-paper/bandwidth/ndi-high-bandwidth-based-on-speedhq7-8bit-4-2-2-4.md)
-  * [NDI HX h.264 (8bit 4:2:0)](white-paper/bandwidth/ndi-hx-h.264-8bit-4-2-0.md)
-  * [NDI HX h.265 (8bit 4:2:0)](white-paper/bandwidth/ndi-hx-h.265-8bit-4-2-0.md)
+  * [NDI HX2 h.264 (8bit 4:2:0)](white-paper/bandwidth/ndi-hx2-h.264-8bit-4-2-0.md)
+  * [NDI HX2 h.265 (8bit 4:2:0)](white-paper/bandwidth/ndi-hx2-h.265-8bit-4-2-0.md)
   * [NDI HX3 h.264 (8bit 4:2:0)](white-paper/bandwidth/ndi-hx3-h.264-8bit-4-2-0.md)
   * [NDI HX3 h.265 (8bit 4:2:0)](white-paper/bandwidth/ndi-hx3-h.265-8bit-4-2-0.md)
   * [NDI Proxy and bandwidth optimization](white-paper/bandwidth/ndi-proxy-and-bandwidth-optimization.md)
@@ -174,6 +175,19 @@
 * [Windows DirectShow Filter](advanced-sdk/windows-directshow-filter.md)
 * [3rd Party Rights](advanced-sdk/3rd-party-rights.md)
 * [Support](advanced-sdk/support.md)
+
+## 🧱 Unreal Engine SDK
+
+* [Introduction](unreal-engine-sdk/introduction.md)
+* [Release Notes](unreal-engine-sdk/release-notes.md)
+* [Licensing](unreal-engine-sdk/licensing.md)
+* [NDI Plugin Installation](unreal-engine-sdk/ndi-plugin-installation.md)
+* [Simple Setup of Broadcast and Receivers](unreal-engine-sdk/simple-setup-of-broadcast-and-receivers.md)
+* [NDI Broadcast Actor](unreal-engine-sdk/ndi-broadcast-actor.md)
+* [NDI Receiver Actor](unreal-engine-sdk/ndi-receiver-actor.md)
+* [NDI Media Assets](unreal-engine-sdk/ndi-media-assets.md)
+* [Getting Started with Example Blueprint Projects](unreal-engine-sdk/getting-started-with-example-blueprint-projects.md)
+* [Advanced](unreal-engine-sdk/advanced.md)
 
 ## ℹ️ Glossary
 

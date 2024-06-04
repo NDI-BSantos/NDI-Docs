@@ -20,6 +20,10 @@ Gigabit (1000 Mbps[^1]) networks are essential in production workflows. A typica
 
 **The following tables** are intended to calculate bandwidth needs based on video resolutions and frame rates. It should be noted, however, that NDI is not deterministic. The bandwidth needed for NDI should be based on the determination of the [average utilization required](#user-content-fn-2)[^2].
 
+{% hint style="info" %}
+**NDI HX1** is a legacy format that will eventually be discontinued. As such, there are not reference tables for it. Contact our [technical support team](mailto:support@ndi.video) if you have any questions.
+{% endhint %}
+
 [^1]: Mbps (Megabits per second) is a unit of measurement for data transfer speed, with one megabit equal to one million bits. Network transmissions are commonly measured in Mbps.
 
 [^2]: Bandwidth numbers are given as reference and are subject to change
