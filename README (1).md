@@ -16,7 +16,7 @@ layout:
 
 This White Paper offers a compressed overview of NDI: its value and place in the future of video, and the technology's fundamental features, protocols, and settings.\
 \
-It is updated in real-time by the NDI team to reflect the most recent developments to our Core Tech Platform. **The current version of NDI is 5.6.**
+It is updated in real-time by the NDI team to reflect the most recent developments to our Core Tech Platform. **The current version of NDI is 6.01.**
 
 
 
