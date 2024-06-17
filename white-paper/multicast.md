@@ -35,26 +35,30 @@ In Linux, Multicast can be configured in the NDI configuration file located in t
 
 Here is the way to set up Multicast in the configuration file:
 
-`},`\
-&#x20;   `"multicast": {`\
-&#x20;     `"send": {`\
-&#x20;       `"ttl": 1,`\
-&#x20;       `"enable": true,`\
-&#x20;       `"netmask": "`<mark style="color:red;">`255.255.0.0`</mark>`",`\
-&#x20;       `"netprefix": "`<mark style="color:red;">`239.255.0.0`</mark>`"`\
-&#x20;     `}`
+```xml
+},
+    "multicast": {
+      "send": {
+        "ttl": 1,
+        "enable": true,
+        "netmask": "255.255.0.0",
+        "netprefix": "239.255.0.0"
+      }
+```
 
 When multicast receiving is enabled, and a sender is available in the same local network, the receiver can negotiate for a multicast stream to be sent. If the sender is not on the same local network, this negotiation does not occur (since it could lead to a multicast stream being sent but never able to arrive at the receiver).
 
 Suppose the network is correctly configured and can ensure a multicast stream to route reliably from a different network to the receiver’s local network. In that case, it is possible to specify the sender’s subnet in the “subnets” setting of the\
 "ndi-config.v1.json" to allow multicast negotiation to occur.
 
-`"multicast": {`\
-&#x20; `"recv": {`\
-&#x20;  `"enable": true,`\
-&#x20;  `"subnets": [ "`<mark style="color:red;">`10.28.5.0/24`</mark>`", "`<mark style="color:red;">`10.28.4.0/24`</mark>`" ]`\
-&#x20; `}`\
-`}`
+```
+"multicast": {
+  "recv": {
+   "enable": true,
+   "subnets": [ "10.28.5.0/24", "10.28.4.0/24" ]
+  }
+}
+```
 
 \
 These settings pertain to the multicast NDI setting on this machine. The first setting determines whether multicast sending is enabled or not.
