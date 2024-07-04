@@ -1,5 +1,5 @@
 ---
-description: SDK VERSION 3.5 FOR USE WITH UNREAL ENGINE® 5.0, 5.1, 5.2, AND 5.3
+description: SDK VERSION 3.6 FOR USE WITH UNREAL ENGINE® 5.0, 5.1, 5.2, 5.3, AND 5.4
 ---
 
 # Unreal Engine SDK
