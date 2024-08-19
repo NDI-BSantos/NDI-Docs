@@ -32,13 +32,16 @@ Once two NDI devices have discovered each other on the network, video can be pas
 
 ![Screenshot of NDI Access Manager tool](<../../.gitbook/assets/1 (1).png>)
 
-In Windows and MacOS, the Discovery Server addresses are configured in the **Advanced Feature Tab.** In Linux, the addresses of the NDI Discovery Servers can be manually added in the NDI configuration file located in the home directory of the effective user: "ndi-config.v1.json"
+In Windows and MacOS, the Discovery Server addresses are configured in the **Advanced Feature Tab.** On Linux, however, the addresses of the NDI Discovery Servers can be manually added in the NDI configuration file, which is stored in a hidden folder named ".ndi" within the home directory of the effective user. The configuration file is named "ndi-config.v1.json".
 
 Here is the way to manually set up the **Discovery Service** in the configuration file:
 
-`"networks": {`\
-`"ips": "",`\
-`"discovery": "`<mark style="color:red;">`192.168.10.10,192.168.10.12`</mark>`",`
+```
+"networks": { 
+      "ips": "", 
+      "discovery": "127.0.0.1,127.0.0.1" 
+    }, 
+```
 
 
 
