@@ -43,6 +43,8 @@
   * [Genlock API](white-paper/synchronization/README.md#ndi-advanced-sdk-genlock-api)
   * [Timestamp, AV Sync API](white-paper/synchronization/README.md#ndi-advanced-sdk-timestamp-av-sync-api)
 * [NDI in Cloud](white-paper/ndi-in-cloud.md)
+* [Configuration Files](white-paper/configuration-files/README.md)
+  * [Configuration file options and details](white-paper/configuration-files/configuration-file-options-and-details.md)
 
 ## 🔨 SDK
 
