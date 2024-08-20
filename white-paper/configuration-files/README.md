@@ -3,19 +3,15 @@
 The NDI configuration settings for a device or software application are saved in a JSON file named "ndi-config.v1.json".\
 
 
-#### **WINDOWS**
+#### **MS WINDOWS & MACOS**
 
-The NDI Tools bundle for Windows includes Access Manager, a user interface for configuring most of the settings outlined above. These settings are also stored in&#x20;
+The NDI Tools bundle for Windows and Mac OS includes Access Manager, the graphical interface that manages the main parameters saved in the NDI configuration file.&#x20;
+
+In MS Windows these settings are also stored in&#x20;
 
 <mark style="color:blue;">C:\ProgramData\NDI\ndi-config.v1.json.</mark>
 
-#### **MACOS**
-
-The NDI Tools bundle for MAC Os includes Access Manager, a user interface for configuring most of the settings outlined above. These settings are also stored in&#x20;
-
-<mark style="color:blue;">$HOME/.ndi/ndi-config.v1.json.</mark>
-
-The configuration settings are stored in&#x20;
+In MAC OS, the configuration file is stored in:
 
 <mark style="color:blue;">$HOME/.ndi/ndi-config.v1.json.</mark>
 
