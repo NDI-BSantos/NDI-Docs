@@ -7,7 +7,7 @@ The NDI configuration settings for a device or software application are saved in
 
 The NDI Tools bundle for Windows and Mac OS includes Access Manager, the graphical interface that manages the main parameters saved in the NDI configuration file.&#x20;
 
-In MS Windows these settings are also stored in&#x20;
+In MS Windows, these settings are also stored in&#x20;
 
 <mark style="color:blue;">C:\ProgramData\NDI\ndi-config.v1.json.</mark>
 
