@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Formatting NDI Configuration file
 
 ### Introduction <a href="#toc178857523" id="toc178857523"></a>

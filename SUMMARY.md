@@ -45,7 +45,7 @@
 * [NDI in Cloud](white-paper/ndi-in-cloud.md)
 * [Configuration Files](white-paper/configuration-files/README.md)
   * [Configuration File Options and Details](white-paper/configuration-files/configuration-file-options-and-details.md)
-  * [Formatting NDI Configuration file](white-paper/configuration-files/formatting-ndi-configuration-file.md)
+  * [Formatting NDI Configuration file](white-paper/page/ndi-configuration-file.md)
 
 ## 🔨 SDK
 
