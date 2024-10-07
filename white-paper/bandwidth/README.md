@@ -18,7 +18,7 @@ NDI operates most efficiently in a dedicated network with high bandwidth and hig
 
 Gigabit (1000 Mbps[^1]) networks are essential in production workflows. A typical NDI stream consisting of 1080 60P video yields a data rate up to 150 Mbps per stream. This extremely efficient stream is designed to have very low latency and allows multiple streams to be stacked together on a single Gigabit network. Even so, a production environment may require more capacity based on a simultaneous number of NDI streams required.
 
-**The following tables** are intended to calculate bandwidth needs based on video resolutions and frame rates. It should be noted, however, that NDI is not deterministic. The bandwidth needed for NDI should be based on the determination of the [average utilization required](#user-content-fn-2)[^2].
+The following tables are intended to calculate bandwidth needs based on video resolutions and frame rates. It should be noted, however, that NDI is not deterministic. The bandwidth needed for NDI should be based on the determination of the [average utilization required](#user-content-fn-2)[^2].
 
 {% hint style="info" %}
 **NDI HX1** is a legacy format that will eventually be discontinued. As such, there are not reference tables for it. Contact our [technical support team](mailto:support@ndi.video) if you have any questions.
