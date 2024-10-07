@@ -44,9 +44,8 @@
   * [Timestamp, AV Sync API](white-paper/synchronization/README.md#ndi-advanced-sdk-timestamp-av-sync-api)
 * [NDI in Cloud](white-paper/ndi-in-cloud.md)
 * [Configuration Files](white-paper/configuration-files/README.md)
-  * [Configuration file options and details](white-paper/configuration-files/configuration-file-options-and-details.md)
-* [Page](white-paper/page/README.md)
-  * [NDI Configuration file](white-paper/page/ndi-configuration-file.md)
+  * [Configuration File Options and Details](white-paper/configuration-files/configuration-file-options-and-details.md)
+  * [Formatting NDI Configuration file](white-paper/configuration-files/formatting-ndi-configuration-file.md)
 
 ## 🔨 SDK
 
