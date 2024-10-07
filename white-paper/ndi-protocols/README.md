@@ -34,13 +34,13 @@ Congestion control: RUDP also includes congestion control algorithms to prevent 
 
 This protocol permits transport across multiple NICs and all network paths, it is intended to use hardware-accelerated network adapters with adaptive bandwidth sharing across NICs.
 
-Multipath TCP[^2] is a transmission protocol that offers advantages such as maximizing throughput, optimizing resource usage, and enhancing network redundancy. It can seamlessly integrate multiple network pathways, including wireless and mobile networks. It is especially efficient when used with NDI (equipment that utilizes multiple Gigabit connections to exchange a large number of NDI streams.
+Multipath TCP[^2] is a transmission protocol that offers advantages such as maximizing throughput, optimizing resource usage, and enhancing network redundancy. It can seamlessly integrate multiple network pathways, including wireless and mobile networks. It is especially efficient when used with NDI equipment that utilizes multiple Gigabit connections to exchange a large number of NDI streams.
 
 However, in scenarios where 10Gbit interfaces are connected with 1Gbit interfaces, Multipath TCP's efficiency is compromised. This is primarily due to network switches being unable to effectively manage network congestion in such situations. As a result, the protocol may not perform optimally in these specific network configurations.
 
 ### UDP with Forward Error Correction – NDI 3
 
-This alternative protocol to TCP[^3] is used when reliable delivery of data [packets ](#user-content-fn-4)[^4]is not required. UDP[^5] is typically used for applications where timeliness is of higher priority than accuracy, such as streaming media, teleconferencing, and voice-over-IP (VoIP). Forward error correction (FEC) is a method of obtaining error control in data transmission in which the source (transmitter) sends redundant data and the destination (receiver).
+This alternative protocol to TCP[^3] is used when reliable delivery of data [packets ](#user-content-fn-4)[^4]is not required. UDP[^5] is typically used for applications where timeliness is of higher priority than accuracy, such as streaming media, teleconferencing, and voice-over-IP (VoIP). Forward error correction (FEC) is a method of obtaining error control in data transmission in which the source (transmitter) sends redundant data to the destination (receiver).
 
 UDP (User Datagram Protocol) with Forward Error Correction (FEC) is a beneficial approach when the network is prone to errors or not entirely reliable. It provides a solution for error correction when data packets get lost or corrupted during transmission.
 
