@@ -179,6 +179,19 @@
 * [3rd Party Rights](advanced-sdk/3rd-party-rights.md)
 * [Support](advanced-sdk/support.md)
 
+## ASDK new
+
+* [NDI Advanced SDK](asdk-new/ndi-advanced-sdk.md)
+* [Introduction](asdk-new/introduction.md)
+* [Release Notes](asdk-new/release-notes.md)
+* [Licensing](asdk-new/licensing.md)
+* [Overview](asdk-new/overview.md)
+* [Configuration Files](asdk-new/configuration-files.md)
+* [NDI SDK Review](asdk-new/ndi-sdk-review/README.md)
+  * [Sending](asdk-new/ndi-sdk-review/sending.md)
+  * [Receiving](asdk-new/ndi-sdk-review/receiving.md)
+  * [Finding](asdk-new/ndi-sdk-review/finding.md)
+
 ## 🧱 Unreal Engine SDK
 
 * [Introduction](unreal-engine-sdk/introduction.md)
