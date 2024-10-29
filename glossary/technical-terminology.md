@@ -1,8 +1,22 @@
 # Technical terminology
 
+## Industry Terms
+
 ### Cache
 
 Cache refers to a reserved section of computer memory or an independent high-speed storage device used to accelerate access and retrieval of commonly used data.
+
+### Channel
+
+Tyically an audio channel is usually a single mono audio input on a device. Less commonly could refer to video components such as luma channel or alpha channel etc.
+
+### Codec
+
+A codec (compressor-decompressor) is a technology or software used to encode and decode data, specifically for audio, video, or multimedia files. Codecs compress data to reduce file size for easier storage or transmission and then decompress it for playback or editing.
+
+### Device
+
+Any hardware capable of communicating over a network using the Internet Protocol (IP) or NDI network. A device can be a source or destination or both while the function of the machine could be sending or receiving.
 
 ### Domain
 
@@ -15,6 +29,22 @@ DNS (Domain Name System) is a system used by the Internet and private networks t
 ### Ethernet
 
 Ethernet, standardized as IEEE 802.3, refers to a series of LAN (Local Area Network) technologies used to connect computers and other devices to a home or business network. Ethernet is a physical and data link layer networking protocol that supports data transfer rates starting at 10 Mbps, typically over twisted pair cabling, but also fiber optic and coaxial cabling.
+
+### Format
+
+Specific details of a signal, eg: resolution, frame-rate, codec encoding, etc.
+
+### Genlock
+
+A process used to synchronize a video source by allowing devices to lock their video signals to a common external reference signal (often referred to as a sync signal or black burst), It is used in video production and broadcasting to ensure that multiple video devices, such as cameras, switchers, and monitors, operate in perfect sync.
+
+### HDCP
+
+High-bandwidth Digital Copyright Protection developed to prevent unauthorized copying of digital content as it travels across connections like HDMI, display port, etc. It is commonly used in high-definition content transmission between devices such as Blu-ray players, TVs, computers, and gaming consoles.
+
+### Host
+
+A specific machine, device, or computer that is connected to a network that can provide or consume services, resources, or data.
 
 ### IGMP
 
@@ -56,6 +86,10 @@ Mbps (Megabits per second) is a unit of measurement for data transfer speed, wit
 
 mDNS (multicast DNS) refers to the use of IP multicast with DNS to translate domain names into IP addresses and provide service discovery in a network that does not have access to a DNS server.
 
+### Monitor
+
+Device used to display or view a video signal or listen to an audio signal. Also defineed as the act of examining details of an audio or video stream
+
 ### OSI
 
 The OSI (Open System Interconnection) reference model is a standard that defines worldwide network communication, developed by ISO (International Organization for Standardization). The OSI reference model divides network communication into seven layers: 1) Physical, 2) Data Link, 3) Network, 4) Transport, 5) Session, 6) Presentation, and 7) Application.
@@ -71,6 +105,11 @@ A port is a communications channel for data transmission to and from a computer 
 ### QoS
 
 QoS (Quality of Service) is the measure of performance for systems or networks, with considerations that include availability, bandwidth, latency, and reliability. QoS can also refer to prioritizing network traffic to ensure a minimum or required level of service, predictability, and/or control.
+
+### Router
+
+1. A networking device capable of transporting IP data based on Layer 3 details (IP Address and subnet details).
+2. An SDI router (Serial Digital Interface router) is a device used to route and manage video signals in broadcast and production environments. It allows multiple SDI video sources, such as cameras, servers, and playback devices, to connected to and switch between various destinations, such as monitors, recorders, or live feeds.
 
 ### Subnet
 
@@ -91,3 +130,75 @@ UDP (User Datagram Protocol) is an alternative protocol to TCP that is used when
 ### WAN
 
 WAN (Wide Area Network) is a network that spans a relatively broad geographical area, such as a state, region, or nation. WANs typically connect multiple smaller networks, such as LANs (Local Area Network) and MANs (Metropolitan Area Network). The Internet is an example of a WAN.
+
+***
+
+## NDI Terminology
+
+### Bridge
+
+An NDI Tool that allows you to connect and share NDI streams between remote NDI infrastructures across a WAN.
+
+### Discovery Server
+
+A software application that stores and shares the discoverability information of NDI senders. It is an alternative to the default discovery and registration method in NDI based on mDNS and does not require multicast.
+
+### Discovery Service
+
+The service provided by NDI Discovery Server.
+
+### Embedded Bridge
+
+A version of NDI bridge capable of connecting an NDI stream from an embedded NDI device to an NDI Bridge host via a WAN
+
+### H.264/H.265
+
+Two specific video codecs which are used for the NDI HX formats
+
+### High Bandwidth
+
+In an NDI system usually refers to a Speed HQ based NDI stream. Potentially could refer to the NDI sender to sending a proxy or a full stream.
+
+### <mark style="background-color:blue;">HX/HX3</mark>
+
+<mark style="background-color:blue;">A way to transport third party codecs over an NDI transport. HX refers to NDI High Efficiency while HX3 refers to NDI HX3.</mark>
+
+### Input/Output
+
+A sender or receiver, typically audio and/or video, that can be connected to another device, potentially something other than NDI but able to send or receive NDI streams. A single NDI sender/receiver can support multiple inputs and outputs and each of which could support audio, video, metadata or a combination. This is part of the negotiation between receiver and sender.&#x20;
+
+{% hint style="warning" %}
+_The terms input and output should be avoided in an NDI context and the terms Sender and Receiver should be used instead as these are NDI standard terms_
+{% endhint %}
+
+### NDI Finder
+
+A software component in the SDK used to find NDI senders and/or other devices on a network.
+
+### NDI Genlock
+
+NDI genlock supports using an NDI signal as a timing reference for software applications which otherwise lack an internal video timebase
+
+### NDI Groups
+
+A way to organize NDI devices to filter NDI senders using NDI discovery service for easier management and discovery
+
+### NDI Tools Router
+
+In the NDI context a router is an NDI SDK instance that can map NDI streams to alternate senders.
+
+### NDI Stream
+
+An NDI connection between two or more hosts that negotiate the start of data transmission. The negotiation primarily concerns the transmission protocol (TCP, UDP, mTCP, or RUDP), codec and the type of stream, either video, audio, metadata or a combination of the three.
+
+### Receiver
+
+A device or application (NDI SDK instance) able to receive an NDI stream.
+
+### Sender
+
+A device, application or NDI SDK instance able to send an NDI stream.
+
+### Speed HQ
+
+The original proprietary codec used with NDI.
