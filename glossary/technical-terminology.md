@@ -159,7 +159,9 @@ Two specific video codecs which are used for the NDI HX formats
 
 In an NDI system usually refers to a Speed HQ based NDI stream. Potentially could refer to the NDI sender to sending a proxy or a full stream.
 
-### <mark style="background-color:blue;">HX/HX3</mark>
+### <mark style="background-color:blue;">HX2</mark>
+
+### <mark style="background-color:blue;">HX3</mark>
 
 <mark style="background-color:blue;">A way to transport third party codecs over an NDI transport. HX refers to NDI High Efficiency while HX3 refers to NDI HX3.</mark>
 
