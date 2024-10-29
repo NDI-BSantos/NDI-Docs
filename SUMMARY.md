@@ -192,7 +192,7 @@
     * [Asynchronous Sending Completions](asdk-new/ndi-sdk-review/sending/asynchronous-sending-completions.md)
     * [NDI Sending On High Latency Connections](asdk-new/ndi-sdk-review/sending/ndi-sending-on-high-latency-connections.md)
   * [Receiving](asdk-new/ndi-sdk-review/receiving/README.md)
-    * [Page](asdk-new/ndi-sdk-review/receiving/page.md)
+    * [Custom allocators](asdk-new/ndi-sdk-review/receiving/custom-allocators.md)
   * [Finding](asdk-new/ndi-sdk-review/finding.md)
 
 ## 🧱 Unreal Engine SDK
