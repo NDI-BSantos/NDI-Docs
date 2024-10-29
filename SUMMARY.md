@@ -188,8 +188,11 @@
 * [Overview](asdk-new/overview.md)
 * [Configuration Files](asdk-new/configuration-files.md)
 * [NDI SDK Review](asdk-new/ndi-sdk-review/README.md)
-  * [Sending](asdk-new/ndi-sdk-review/sending.md)
-  * [Receiving](asdk-new/ndi-sdk-review/receiving.md)
+  * [Sending](asdk-new/ndi-sdk-review/sending/README.md)
+    * [Asynchronous Sending Completions](asdk-new/ndi-sdk-review/sending/asynchronous-sending-completions.md)
+    * [NDI Sending On High Latency Connections](asdk-new/ndi-sdk-review/sending/ndi-sending-on-high-latency-connections.md)
+  * [Receiving](asdk-new/ndi-sdk-review/receiving/README.md)
+    * [Page](asdk-new/ndi-sdk-review/receiving/page.md)
   * [Finding](asdk-new/ndi-sdk-review/finding.md)
 
 ## 🧱 Unreal Engine SDK
