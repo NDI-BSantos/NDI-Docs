@@ -202,6 +202,15 @@
   * [Guidelines](asdk-new/av-sync/guidelines.md)
   * [Creating and Destroying Devices](asdk-new/av-sync/creating-and-destroying-devices.md)
   * [Recovering Audio](asdk-new/av-sync/recovering-audio.md)
+* [Using H.264, H.265, and AAC Codecs](asdk-new/using-h.264-h.265-and-aac-codecs/README.md)
+  * [Sending Audio Frames](asdk-new/using-h.264-h.265-and-aac-codecs/sending-audio-frames.md)
+  * [Sending Video Frames](asdk-new/using-h.264-h.265-and-aac-codecs/sending-video-frames.md)
+  * [H.264 Support](asdk-new/using-h.264-h.265-and-aac-codecs/h.264-support.md)
+  * [H.265 Support](asdk-new/using-h.264-h.265-and-aac-codecs/h.265-support.md)
+  * [AAC Support](asdk-new/using-h.264-h.265-and-aac-codecs/aac-support.md)
+  * [OPUS Support](asdk-new/using-h.264-h.265-and-aac-codecs/opus-support.md)
+  * [Latency of Compressed Streams](asdk-new/using-h.264-h.265-and-aac-codecs/latency-of-compressed-streams.md)
+  * [Stream Validation](asdk-new/using-h.264-h.265-and-aac-codecs/stream-validation.md)
 
 ## 🧱 Unreal Engine SDK
 
