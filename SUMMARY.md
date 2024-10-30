@@ -198,6 +198,10 @@
     * [Receiver Codec Support Level](asdk-new/ndi-sdk-review/video-formats/receiver-codec-support-level.md)
     * [Frame Synchronization](asdk-new/ndi-sdk-review/video-formats/frame-synchronization.md)
 * [Genlock](asdk-new/genlock.md)
+* [AV Sync](asdk-new/av-sync/README.md)
+  * [Guidelines](asdk-new/av-sync/guidelines.md)
+  * [Creating and Destroying Devices](asdk-new/av-sync/creating-and-destroying-devices.md)
+  * [Recovering Audio](asdk-new/av-sync/recovering-audio.md)
 
 ## 🧱 Unreal Engine SDK
 
