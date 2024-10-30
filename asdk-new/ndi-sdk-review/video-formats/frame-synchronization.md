@@ -1,8 +1,8 @@
 # Frame Synchronization
 
-#### Frame Synchronization
-
-Note: When using video, it is important to realize that often you are using different clocks for different parts of the signal chain.
+{% hint style="info" %}
+When using video, it is important to realize that often you are using different clocks for different parts of the signal chain.
+{% endhint %}
 
 Within NDI, the sender can send at the clock rate it wants, and the receiver will receive it at that rate. In many cases, however, the sender and receiver are extremely unlikely to share the _exact same_ clock rate. Bear in mind that computer clocks rely on crystals which -- while notionally rated for the same frequency -- are seldom truly identical.
 
@@ -18,8 +18,9 @@ In addition to time-base correction operations the frame sync will also automati
 
 A very common application of the frame-synchronizer is to display video on screen timed to the GPU v-sync, in which case you should convert the incoming time-base to the time-base of the GPU. The following table lists some common scenarios in which you might want to use frame-synchronization:
 
-| **Video playback on screen or a multiviewer** | Yes – you want the clock to be synced with vertical refresh. On a multi-viewer you would have a frame-sync for every video source, then call all of them on each v-sync and redraw all sources at that time.                                                                     |
+| Scenario                                      | Recommendation                                                                                                                                                                                                                                                                   |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Video playback on screen or a multiviewer** | Yes – you want the clock to be synced with vertical refresh. On a multi-viewer you would have a frame-sync for every video source, then call all of them on each v-sync and redraw all sources at that time.                                                                     |
 | **Audio playback through sound card**         | Yes – the clock should be synced with your sound card clock.                                                                                                                                                                                                                     |
 | **Video mixing of sources**                   | Yes – all video input clocks need to be synced to your output video clock. You can take each of the video inputs and frame-synchronize them together.                                                                                                                            |
 | **Audio mixing**                              | Yes – you want all input audio clocks to be brought into sync with your output audio clock. You would create a frame-synchronizer for each audio source and – when driving the output – call each one, asking for the correct number of samples and sample-rate for your output. |

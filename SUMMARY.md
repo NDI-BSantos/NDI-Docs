@@ -197,6 +197,7 @@
   * [Video Formats](asdk-new/ndi-sdk-review/video-formats/README.md)
     * [Receiver Codec Support Level](asdk-new/ndi-sdk-review/video-formats/receiver-codec-support-level.md)
     * [Frame Synchronization](asdk-new/ndi-sdk-review/video-formats/frame-synchronization.md)
+* [Genlock](asdk-new/genlock.md)
 
 ## 🧱 Unreal Engine SDK
 
