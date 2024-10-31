@@ -213,6 +213,13 @@
   * [Stream Validation](asdk-new/using-h.264-h.265-and-aac-codecs/stream-validation.md)
 * [External Tally Support](asdk-new/external-tally-support.md)
 * [KVM Support](asdk-new/kvm-support.md)
+* [NDI Advanced SDK FPGA Example Designs](asdk-new/ndi-advanced-sdk-fpga-example-designs.md)
+* [Prebuilt uSD Images](asdk-new/prebuilt-usd-images.md)
+* [NDI FPGA Reference Design](asdk-new/ndi-fpga-reference-design/README.md)
+  * [FPGA Projects](asdk-new/ndi-fpga-reference-design/fpga-projects.md)
+  * [C++ Application Code](asdk-new/ndi-fpga-reference-design/c++-application-code.md)
+  * [linux\_kernel](asdk-new/ndi-fpga-reference-design/linux\_kernel.md)
+  * [uSD Image Builder](asdk-new/ndi-fpga-reference-design/usd-image-builder.md)
 
 ## 🧱 Unreal Engine SDK
 

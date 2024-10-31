@@ -1,0 +1,174 @@
+# uSD Image Builder
+
+Scripts to build uSD images for NDI demo platforms based on Debian.
+
+| File              | Description                                            |
+| ----------------- | ------------------------------------------------------ |
+| `README.md`       | This file                                              |
+| `CHANGELOG.md`    | List of notable changes                                |
+| `a10-socdk.conf`  | Config file for Arria-10 SoC Development Kit           |
+| `sockit.conf`     | Config file for SoCKit image                           |
+| `zcu104.conf`     | Config file for ZCU104                                 |
+| `zybo.conf`       | Config file for Zybo-Z7-20 and Arty-Z7-20              |
+| `build.sh`        | Main image build script                                |
+| `common.sh`       | Functions common to several scripts                    |
+| `boot.sh`         | Extracts boot files from a PetaLinux project           |
+| `debootstrap.sh`  | Creates a Debian root filesystem from scratch          |
+| `second-stage.sh` | The debootstrap second-stage and rootfs customizations |
+| `mk.uSD.sh`       | Creates a uSD image from boot files and a rootfs       |
+| `part.txt`        | Partion table for the uSD                              |
+| `part.a2.txt`     | Partion table for uSD images with Altera A2 partition  |
+| `update.*.tgz.sh` | Example to generate optional tgz files                 |
+
+The build scripts are based on a config script which provides details needed to create an image. The main details required are a pointer to the boot files and various architecture specific information (eg: the Debian architecture name and the qemu static binary to use for an emulated chroot environment). Various other settings may be tweaked as well, including the uSD target size, system host name, etc. Refer to the existing \*.conf files for details.
+
+## Build Dependencies
+
+*   `debootstrap`
+
+    Used to create a root filesystem image. Currently using version 1.0.128nmu2 with Debian 12 (bullseye). Many operating systems ship with an older version of debootstrap that is available through their package managers. It is recommended that a more recent version be installed from a preexisting .deb package. See [sect D.3.2](https://www.debian.org/releases/stable/i386/apds03.en.html) for more details.
+*   `qemu-static`
+
+    Required to run debootstrap second-stage. Currently tested with version 4.2.1. Note that transparent emulation needs to be set up on the host system. See the QEMU documentation for more details on how to configure this.
+
+## Build an image
+
+To build an image from scratch, simply run the build.sh script with the desired configuration specified:
+
+```
+./build.sh zcu104.conf
+```
+
+## Rebuild an image
+
+It is often not necessary to run all steps from scratch. Once an initial build has created the required bootfs and rootfs directories, each component of the uSD image may be updated independently. The components that makeup the uSD image are:
+
+*   `bootfs.<board>/`
+
+    This directory contains the Xilinx boot files and linux kernel modules extracted from the PetaLinux project. This directory is created and updated by running the `boot.sh` script.
+*   `../linux_kernel/<board>/boot`
+
+    This directory contains the Altera boot files and linux kernel modules. This directory is created and updated by running make in the `../linux_kernel/<board>` directory.
+*   `root.<deb_arch>.tgz`
+
+    This file is manually generated and if present will be extracted to the root directory of the target file-system by the root user. This is currently used to install pre-compiled NDI example binaries to /usr/local/bin and the required shared libraries to /usr/local/lib.
+
+    This file is processed by the `second-stage.sh` script, so any changes require re-running `debootstrap.sh` or manually applying the changes to the rootfs directory.
+
+    Note this file should include full paths preceded by a leading ./ eg: `./usr/local/lib/file.so`. Below is one example of how to properly create this file:
+
+    ```
+    # Start at the root directory
+    cd /
+
+    # Create a tar archive with a leading ./ and put it in /tmp
+    tar -czvf /tmp/root.armhf.tgz ./usr/local/bin/*
+    ```
+*   `user.<deb_arch>.tgz`
+
+    This file is similar to the `root.<deb_arch>.tgz` file, above, except it is extracted into the default user's home directory by the default user. This file is used to install the HDMI start and stop scripts for the ZCU104, and is unused by the Zybo-Z7-20 example. Place any files that need to be owned by the default user and thus cannot be placed in the root archive (since the default username, uid/gid, and home directory may change) into this archive.
+
+    This file is processed by the `second-stage.sh` script, so any changes require re-running `debootstrap.sh` or manually applying the changes to the rootfs directory.
+*   `rootfs.<deb_arch>/`
+
+    This directory contains a stock Debian install generated by debootstrap along with some modifications required to make a usable image (eg: create /etc/fstab and enable networking) and tweaks required for this example (eg: build and install the libuio package). This directory is generated by running the `debootstrap.sh` script, while most of the customizations to the rootfs occur in the `second-stage.sh` script.
+
+    Running debootstrap.sh deletes any existing rootfs and recreates it from scratch, which is a lengthy process and does not allow for modifications other than editing the `second-stage.sh` script. Once created, however, the rootfs directory may be edited manually, just be careful with file-system permissions and user ids. It is also possible to chroot to the rootfs and execute native commands, eg:
+
+    ```
+    # Setup shell variables for our configuration
+    source zcu104.conf
+
+    # Open a native shell in the rootfs
+    sudo LANG=C.UTF-8 chroot $ROOTFS /bin/bash
+    ```
+
+Once any desired changes have been made to the above components, a new image can be created by running:
+
+```
+sudo ./mk.uSD.sh <config>.conf
+```
+
+## Changelog
+
+### \[6.1.0-rc1] - 2024-09-13
+
+#### Changed
+
+* Reset version numbering to align with software SDK
+* Update prebuilt tarballs with current NDI library and applications
+
+### \[1.5.3] - 2023-08-25
+
+#### Changed
+
+* Switched root filesystem from Debian 11 (bullseye) to Debian 12 (bookworm)
+* Build updates for Petalinux 2022.1
+* Using extlinux.conf instead of boot.scr due to changes with newer versions of the Xilinx tools
+* Debootstrap now requires transparent emulation via QEMU
+
+### \[1.5.1] - 2022-09-24
+
+#### Added
+
+* Image configuration for Arria-10 SoC Development Kit
+
+#### Changed
+
+* Update from Debian stretch to Bullseye
+* Altera boot files updated to match current U-Boot generated files
+
+### \[1.4.0] - 2020-03-25
+
+#### Added
+
+* Updates for NDI v4.5
+* Composite uSD image supporting both Xilnix Digilent Zybo-Z7 and Intel/Altera Terasic SoCKit boards using the same uSD image
+* NDI Decode support
+
+### \[1.3.1] - 2020-01-07
+
+#### Changed
+
+* Change partition layout for armhf configurations to allow dual booting of Zybo-Z7-20 and SoCKit boards with the same uSD image
+* Switch back to upstream head for libuio source code
+
+### \[1.3.0] - 2019-07-07
+
+#### Added
+
+* Updates for NDI v4.0
+
+#### Changed
+
+* Allow for multiple boot filesets in uSD image generation
+* Switch libuio repository used to build from source
+  * Upstream broke uio nodes with no map entry
+
+### \[1.1.1] - 2018-09-25
+
+#### Added
+
+* Resize root partition on first boot
+
+#### Changed
+
+* Updated for new directory structure
+
+### \[1.1.0] - 2018-09-09
+
+#### Added
+
+* CHANGELOG.md
+* build.sh script to do (mostly) everything to make an image
+* update.tgz.sh
+
+#### Changed
+
+* Switched to using \*.conf files for image details
+* Factored general setup into common.sh
+* Lots of code cleanup
+
+### \[1.0.0] - 2018-07-13
+
+* Initial version
