@@ -211,6 +211,8 @@
   * [OPUS Support](asdk-new/using-h.264-h.265-and-aac-codecs/opus-support.md)
   * [Latency of Compressed Streams](asdk-new/using-h.264-h.265-and-aac-codecs/latency-of-compressed-streams.md)
   * [Stream Validation](asdk-new/using-h.264-h.265-and-aac-codecs/stream-validation.md)
+* [External Tally Support](asdk-new/external-tally-support.md)
+* [KVM Support](asdk-new/kvm-support.md)
 
 ## 🧱 Unreal Engine SDK
 
