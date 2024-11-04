@@ -181,7 +181,6 @@
 
 ## ASDK Updates
 
-* [NDI Advanced SDK](asdk-updates/ndi-advanced-sdk.md)
 * [Introduction](asdk-updates/introduction.md)
 * [Release Notes](asdk-updates/release-notes.md)
 * [Licensing](asdk-updates/licensing.md)
