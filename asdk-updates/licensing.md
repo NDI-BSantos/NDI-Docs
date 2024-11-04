@@ -23,5 +23,5 @@ Note that if you wish to use “NDI” within the name of your product then you 
 We are very interested in how our technology is being used and would like to maintain a full list of applications using NDI technology. Please let us know about your commercial application (or interesting non-commercial one) using NDI by telling us on our NDI SDK support hub at [https://ndi.video/resources/get-in-touch/](https://ndi.video/resources/get-in-touch/). If you have any questions, comments, or requests, please do not hesitate to let us know. Our goal is to provide you with this technology and encourage its use, while ensuring that both end-users and developers enjoy a consistent high-quality experience.
 
 {% hint style="warning" %}
-Because AAC, H.264, and H.265 are formats that potentially are not license free, it is your responsibility to ensure that these are correctly licensed for your product if you are using these with
+Because AAC, H.264, and H.265 are formats that potentially are not license free, it is your responsibility to ensure that these are correctly licensed for your product if you are using these with this SDK.
 {% endhint %}
