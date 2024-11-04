@@ -235,4 +235,5 @@
 
 ## ℹ️ Glossary
 
-* [Technical terminology](glossary/technical-terminology.md)
+* [Technical Terminology](glossary/technical-terminology.md)
+* [NDI Terminology](glossary/ndi-terminology.md)
