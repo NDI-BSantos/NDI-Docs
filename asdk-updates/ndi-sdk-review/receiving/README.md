@@ -2,7 +2,7 @@
 
 ### Receiving
 
-NDI receivers are created in the same way as they would be in the NDI SDK, using NDIlib\_recv\_create\_v3, or the newer function available to the Advanced SDK, NDIlib\_recv\_create\_v4. As with senders, you provide the device name. It is strongly recommended that your device allow its name to be configured so that individual devices can be identified on the network. (This is not currently used by NDI applications; however it is anticipated that it will be in the future and your device will thus be future-proof.)
+NDI receivers are created in the same way as they would be in the NDI SDK, using `NDIlib_recv_create_v3`, or the newer function available to the Advanced SDK, `NDIlib_recv_create_v4`. As with senders, you provide the device name. It is strongly recommended that your device allow its name to be configured so that individual devices can be identified on the network. (This is not currently used by NDI applications; however it is anticipated that it will be in the future and your device will thus be future-proof.)
 
 An example of creating a receiver follows below:
 

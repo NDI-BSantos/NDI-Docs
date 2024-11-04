@@ -2,7 +2,7 @@
 
 ## Configuration Files
 
-All default settings for NDI® are controlled through a configuration file. This file is located at $HOME/.ndi/ndi-config.v1.json. It contains settings for multicast and unicast sending as well as vendor information. Your vendor ID is specified here and must be registered with NDI for compressed data pass-through to be enabled.
+All default settings for NDI® are controlled through a configuration file. This file is located at `$HOME/.ndi/ndi-config.v1.json`. It contains settings for multicast and unicast sending as well as vendor information. Your vendor ID is specified here and must be registered with NDI for compressed data pass-through to be enabled.
 
 The configuration file will automatically be loaded off disk by default and these settings used. If you wish to work this way, you can simply restart your application when configuration settings on the device are changed, and the settings will be updated.
 

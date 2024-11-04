@@ -80,7 +80,7 @@ The same frame can be returned multiple times if duplication is needed to match 
 
 It is assumed that progressive video sources can i) correctly display either a field 0 or field 1, ii) that fielded sources can correctly display progressive sources, and iii) that the display of field 1 on a field 0 (or vice versa) should be avoided at all costs.
 
-If no video frame has ever been received, this will return NDIlib\_video\_frame\_v2\_t as an empty (all zero) structure. This allows you to determine that there has not yet been any video and act accordingly (for instance you might want to display a constant frame output at a particular video format, or black).
+If no video frame has ever been received, this will return `NDIlib_video_frame_v2_t` as an empty (all zero) structure. This allows you to determine that there has not yet been any video and act accordingly (for instance you might want to display a constant frame output at a particular video format, or black).
 
 ```
 void NDIlib_framesync_capture_video(
