@@ -17,6 +17,7 @@ send_create.clock_audio = false; // Your audio is probably clocked by your own h
 send_create.clock_video = false; // Your video is probably clocked by your own hardware.
 send_create.p_ndi_name = "Your name"; // Often configured in your web page.
 send_create.p_groups = NULL; // You can allow this to be configured in your web page.
+	
 const char *p_config_json = NULL; // You can override the default json file settings
 NDIlib_send_instance_t pSend = NDIlib_send_create_v2(&send_create, p_config_json);
 ```
@@ -28,22 +29,21 @@ It is crucial that you provide XML identification for all hardware devices. This
 For example, the following XML identification would work, although it should be filled in with the correct settings for your device (serial numbers should be unique to each device manufactured):
 
 ```
-NDIlib_metadata_frame_t NDI_product_type;
-NDI_product_type.p_data = "<ndi_product long_name=\NDILib Send Example.\ "
-" short_name=\NDILib Send\ "
-" manufacturer=\CoolCo, inc.\ "
-" version=\1.000.000\ "
-" session=\default\ "
-" model_name=\S1\ "
-" serial=\ABCDEFG\ />";
+NDIlib_metadata_frame_t NDI_product_type; 
+NDI_product_type.p_data = "<ndi_product long_name=\"NDILib Send Example.\" "
+                          "             short_name=\"NDILib Send\" "
+                          "             manufacturer=\"CoolCo, inc.\" "
+                          "             version=\"1.000.000\" "
+                          "             session=\"default\" "
+                          "             model_name=\"S1\" "
+                          "             serial=\"ABCDEFG\" />";
 NDIlib_send_add_connection_metadata(pNDI_send, &NDI_product_type);
 ```
 
 You are now going to be able to pass compressed frames directly to the SDK. The following is a very basic example of how this might be configured.
 
-NDIlib\_video\_frame\_v2\_t video\_frame;
-
 ```
+NDIlib_video_frame_v2_t video_frame;
 video_frame.xres = 1920;
 video_frame.yres = 1080;
 video_frame.frame_format_type = NDIlib_frame_format_type_progressive;
@@ -54,6 +54,7 @@ video_frame.frame_rate_D = 1001;
 video_frame.timecode = /* A timestamp from your hardware at 100 ns clock rate */;
 video_frame.p_data = /* Your compressed data */;
 video_frame.line_stride_in_bytes = /* The size of your compressed data in bytes */;
+
 NDIlib_send_send_video_v2(pSend, &video_frame);
 ```
 
@@ -98,16 +99,20 @@ For instance, the following might be used as a send loop:
 
 ```
 NDIlib_video_frame_v2_t frame_main, frame_prvw;
+
 while (true) {
     // Get the next frames to send
     NDIlib_video_frame_v2_t new_frame_main = get_frame_main();
     NDIlib_video_frame_v2_t new_frame_prvw = get_frame_prvw();
+
     // Send the frames
     NDIlib_send_send_video_async_v2(pSend, &new_frame_main);
     NDIlib_send_send_video_async_v2(pSend, &new_frame_prvw);
+
     // The previous frames are now guaranteed to no longer be needed by the SDK
     release_frame_main(&frame_main);
     release_frame_main(&frame_prvw);
+
     // These are now the next frames to use
     frame_main = new_frame_main;
     frame_prvw = new_frame_prvw;
@@ -124,9 +129,10 @@ audio_frame.sample_rate = 48000;
 audio_frame.no_channels = 4;
 audio_frame.no_samples = 1920;
 audio_frame.FourCC = /* Fill in with the correct value */;
-audio_frame.p_data = /* Fill in with the correct value */;
+audio_frame.p_data =  /* Fill in with the correct value */;
 audio_frame.channel_stride_in_bytes = /* Fill in with the correct value */;
 audio_frame.timecode = /* Fill in with a 100 ns timestamp from your device */;
+
 NDIlib_send_send_audio_v3(pSend, &audio_frame);
 ```
 
@@ -136,11 +142,12 @@ It is crucial to ensure that your audio is provided to the SDK at the correct au
 
 The video bitrate should be controlled by your compressor by varying the Q level. You may determine this by calling the following function, which will return the size of the expected frame in bytes.
 
-<pre><code>int NDIlib_send_get_target_frame_size(
-    NDIlib_send_instance_t p_instance,
-<strong>    const NDIlib_video_frame_v2_t* p_video_data
-</strong>);
-</code></pre>
+```
+int NDIlib_send_get_target_frame_size(
+    NDIlib_send_instance_t p_instance, 
+    const NDIlib_video_frame_v2_t* p_video_data
+);
+```
 
 
 
