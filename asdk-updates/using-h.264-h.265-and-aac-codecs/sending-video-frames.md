@@ -5,7 +5,7 @@ Because you are undertaking all compression of the video yourself, you should pr
 You will then need to submit these two frames separately to the SDK. The creation of the frames is identical to the audio example in the previous section. The following is an example of just one of the two required streams:
 
 ```
-uint8_t* p_h264_data;
+uint8_t* p_h264_data; 
 uint32_t h264_data_size;
 
 // This is probably zero for non I-frames, but MUST be set of I-frames
@@ -14,7 +14,7 @@ uint32_t h264_extra_data_size;
 
 // Compute the total size of the structure
 uint32_t packet_size = sizeof(NDIlib_compressed_packet_t) + h264_data_size +
-h264_extra_data_size;
+                                                            h264_extra_data_size;
 
 // Allocate the structure
 NDIlib_compressed_packet_t* p_packet = (NDIlib_compressed_packet_t*)malloc(packet_size);
@@ -22,10 +22,10 @@ NDIlib_compressed_packet_t* p_packet = (NDIlib_compressed_packet_t*)malloc(packe
 // Fill in the settings
 p_packet->version = NDIlib_compressed_packet_t::version_0;
 p_packet->fourCC = NDIlib_FourCC_type_H264;
-p_packet->pts = 0; // These should be filled in correctly !
+p_packet->pts = 0;	// These should be filled in correctly !
 p_packet->dts = 0;
-p_packet->flags = is_I_frame ? NDIlib_compressed_packet_t::flags_keyframe
-    : NDIlib_compressed_packet_t::flags_none;
+p_packet->flags = is_I_frame ? NDIlib_compressed_packet_t::flags_keyframe 
+			       : NDIlib_compressed_packet_t::flags_none;
 p_packet->data_size = h264_data_size;
 p_packet->extra_data_size = h264_extra_data_size;
 
@@ -47,8 +47,8 @@ It is crucial that the value of the FourCC specifies whether this is the full or
 ```
 // Create a regular NDI audio frame, but of compressed format
 NDIlib_video_frame_v2_t video_frame;
-video_frame.xres = 1920; // Must match H.264 data
-video_frame.yres = 1080; // Must match H.264 data
+video_frame.xres = 1920;	// Must match H.264 data
+video_frame.yres = 1080;	// Must match H.264 data
 
 // This must value is dependent on whether this is a full or preview
 // stream. This example shows the full resolution stream, the preview.
@@ -62,7 +62,7 @@ video_frame.frame_rate_D = 1001;
 // Any reasonable aspect ratio is supported
 video_frame.picture_aspect_ratio = 16.0f/9.0f;
 
-// We only currently allow
+// We only currently allow 
 video_frame.frame_format_type = NDIlib_frame_format_type_progressive;
 
 // Choose a good value, this is an example

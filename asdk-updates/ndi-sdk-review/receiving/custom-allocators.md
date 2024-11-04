@@ -87,6 +87,7 @@ bool video_custom_deallocator(void* p_opaque, const NDIlib_video_frame_v2_t* p_v
     free(p_video_data->p_data);
     return true;
 }
+
 ```
 
 One may then simply assign the allocator for any receiver with:

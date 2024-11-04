@@ -35,7 +35,7 @@ Once this receiver has been bound to a frame-sync, you should use it in order to
 
 The frame-sync is destroyed with the corresponding call:
 
-void NDIlib\_framesync\_destroy(NDIlib\_framesync\_instance\_t p\_instance);
+`void NDIlib_framesync_destroy(NDIlib_framesync_instance_t p_instance);`
 
 To recover audio, the following function will pull audio samples from the frame-sync queue. This function will always return data immediately, inserting silence if no current audio data is present. You should call this at the rate that you want audio, and it will automatically use dynamic audio sampling to conform the incoming audio signal to the rate at which you are calling.
 
@@ -49,11 +49,11 @@ Audio resampling is done with high order audio filters. Timecode and per frame m
 
 ```
 void NDIlib_framesync_capture_audio(
-        NDIlib_framesync_instance_t p_instance, // The frame sync instance
-        NDIlib_audio_frame_v2_t* p_audio_data, // The destination audio buffer
-        int sample_rate, // Your desired sample rate. 0 for "use source".
-        int no_channels, // Your desired channel count. 0 for "use source".
-        int no_samples // The number of audio samples that you wish to get.
+    NDIlib_framesync_instance_t p_instance, // The frame sync instance
+    NDIlib_audio_frame_v2_t* p_audio_data,  // The destination audio buffer
+    int sample_rate, // Your desired sample rate. 0 for “use source”.
+    int no_channels, // Your desired channel count. 0 for “use source”.
+    int no_samples   // The number of audio samples that you wish to get.
 );
 ```
 
@@ -63,8 +63,8 @@ The buffer returned is freed using the corresponding function:
 
 ```
 void NDIlib_framesync_free_audio(
-NDIlib_framesync_instance_t p_instance,
-NDIlib_audio_frame_v2_t* p_audio_data
+    NDIlib_framesync_instance_t p_instance,
+    NDIlib_audio_frame_v2_t* p_audio_data
 );
 ```
 

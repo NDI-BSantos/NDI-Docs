@@ -212,13 +212,13 @@
   * [Stream Validation](asdk-updates/using-h.264-h.265-and-aac-codecs/stream-validation.md)
 * [External Tally Support](asdk-updates/external-tally-support.md)
 * [KVM Support](asdk-updates/kvm-support.md)
-* [NDI Advanced SDK FPGA Example Designs](asdk-updates/ndi-advanced-sdk-fpga-example-designs.md)
-* [Prebuilt uSD Images](asdk-updates/prebuilt-usd-images.md)
-* [NDI FPGA Reference Design](asdk-updates/ndi-fpga-reference-design/README.md)
-  * [FPGA Projects](asdk-updates/ndi-fpga-reference-design/fpga-projects.md)
-  * [C++ Application Code](asdk-updates/ndi-fpga-reference-design/c++-application-code.md)
-  * [linux\_kernel](asdk-updates/ndi-fpga-reference-design/linux\_kernel.md)
-  * [uSD Image Builder](asdk-updates/ndi-fpga-reference-design/usd-image-builder.md)
+* [NDI Advanced SDK FPGA Example Designs](asdk-updates/ndi-advanced-sdk-fpga-example-designs/README.md)
+  * [Prebuilt uSD Images](asdk-updates/ndi-advanced-sdk-fpga-example-designs/prebuilt-usd-images.md)
+  * [NDI FPGA Reference Design](asdk-updates/ndi-advanced-sdk-fpga-example-designs/ndi-fpga-reference-design/README.md)
+    * [FPGA Projects](asdk-updates/ndi-advanced-sdk-fpga-example-designs/ndi-fpga-reference-design/fpga-projects.md)
+    * [C++ Application Code](asdk-updates/ndi-advanced-sdk-fpga-example-designs/ndi-fpga-reference-design/c++-application-code.md)
+    * [linux\_kernel](asdk-updates/ndi-advanced-sdk-fpga-example-designs/ndi-fpga-reference-design/linux\_kernel.md)
+    * [uSD Image Builder](asdk-updates/ndi-advanced-sdk-fpga-example-designs/ndi-fpga-reference-design/usd-image-builder.md)
 
 ## 🧱 Unreal Engine SDK
 

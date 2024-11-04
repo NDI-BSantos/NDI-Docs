@@ -69,12 +69,12 @@ bool NDIlib_recv_kvm_send_keyboard_press(
 );
 ```
 
-To send a keyboard press event, this function is called. Keyboard messages use the standard X-Windows Keysym values. A copy of the standard define that is used for these is included in the NDI SDK for your convenience with the filename "Processing.NDI.KVM.keysymdef.h". Since this file includes many #defines, it is not included by default when you simply include the NDI SDK files, if you wish it to be included you may #define the value `NDI_KVM_INCLUDE_KEYSYM` or simply include this file into your application manually. For every key press event it is important to also send a keyboard release event, or the destination will believe that there is a "stuck key"! Additional information about keysym values may easily be located online, for instance `https://www.tcl.tk/man/tcl/TkCmd/keysyms.html`
+To send a keyboard press event, this function is called. Keyboard messages use the standard X-Windows Keysym values. A copy of the standard define that is used for these is included in the NDI SDK for your convenience with the filename "Processing.NDI.KVM.keysymdef.h". Since this file includes many #defines, it is not included by default when you simply include the NDI SDK files, if you wish it to be included you may #define the value `NDI_KVM_INCLUDE_KEYSYM` or simply include this file into your application manually. For every key press event it is important to also send a keyboard release event, or the destination will believe that there is a "stuck key"! Additional information about keysym values may easily be located online, for instance https://www.tcl.tk/man/tcl/TkCmd/keysyms.html
 
 ```
 bool NDIlib_recv_kvm_send_keyboard_release(
     NDIlib_recv_instance_t p_instance, const int key_sym_value
-);    
+);
 ```
 
 Once you wish a keyboard value to be "release" then one simply sends the matching keyboard release message with the associated key-sym value.
