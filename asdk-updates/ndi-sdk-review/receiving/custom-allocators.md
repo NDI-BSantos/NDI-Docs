@@ -36,28 +36,32 @@ bool video_custom_allocator(void* p_opaque, NDIlib_video_frame_v2_t* p_video_dat
                 p_video_data->line_stride_in_bytes * p_video_data->yres
             );
             break;
+
         case NDIlib_FourCC_video_type_UYVA:
             p_video_data->line_stride_in_bytes = p_video_data->xres * 2;
             p_video_data->p_data = (uint8_t*)malloc(
-                /* UYVY */p_video_data->line_stride_in_bytes * p_video_data->yres +
+                /* UYVY  */p_video_data->line_stride_in_bytes * p_video_data->yres +
                 /* Alpha */p_video_data->line_stride_in_bytes / 2 * p_video_data->yres
             );
             break;
+
         case NDIlib_FourCC_video_type_P216:
             p_video_data->line_stride_in_bytes = p_video_data->xres * sizeof(uint16_t);
             p_video_data->p_data = (uint8_t*)malloc(
-                /* Y */p_video_data->line_stride_in_bytes * p_video_data->yres +
+                /* Y    */p_video_data->line_stride_in_bytes * p_video_data->yres +
                 /* CbCr */p_video_data->line_stride_in_bytes * p_video_data->yres
             );
             break;
+
         case NDIlib_FourCC_video_type_PA16:
             p_video_data->line_stride_in_bytes = p_video_data->xres * sizeof(uint16_t);
             p_video_data->p_data = (uint8_t*)malloc(
-                /* Y */p_video_data->line_stride_in_bytes * p_video_data->yres +
-                /* CbCr */p_video_data->line_stride_in_bytes * p_video_data->yres +
+                /* Y     */p_video_data->line_stride_in_bytes * p_video_data->yres +
+                /* CbCr  */p_video_data->line_stride_in_bytes * p_video_data->yres +
                 /* Alpha */p_video_data->line_stride_in_bytes * p_video_data->yres
             );
             break;
+
         case NDIlib_FourCC_video_type_BGRA:
         case NDIlib_FourCC_video_type_BGRX:
         case NDIlib_FourCC_video_type_RGBA:
@@ -67,14 +71,17 @@ bool video_custom_allocator(void* p_opaque, NDIlib_video_frame_v2_t* p_video_dat
                 p_video_data->>line_stride_in_bytes*p_video_data->yres
             );
             break;
+
         default:
             // Error, not a supported FourCC
             p_video_data->line_stride_in_bytes = 0;
             p_video_data->p_data = NULL;
             return false;
     }
+
     return true; // Success.
 }
+
 bool video_custom_deallocator(void* p_opaque, const NDIlib_video_frame_v2_t* p_video_data)
 {
     free(p_video_data->p_data);
@@ -114,13 +121,16 @@ bool audio_custom_allocator(void* p_opaque, NDIlib_audio_frame_v3_t* p_audio_dat
                 p_audio_data->channel_stride_in_bytes * p_audio_data->no_channels
             );
             break;
+
         default:
             p_audio_data->channel_stride_in_bytes = 0;
             p_audio_data->p_data = nullptr;
             return false;
-        }
-        return true;
+    }
+
+    return true;
 }
+
 bool audio_custom_deallocator(void* p_opaque, const NDIlib_audio_frame_v3_t* p_audio_data)
 {
     free(p_audio_data->p_data);
