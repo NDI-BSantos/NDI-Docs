@@ -1,6 +1,4 @@
-# Technical Terminology
-
-## Industry Terms
+# Industry Standard Terminology
 
 ### Cache
 

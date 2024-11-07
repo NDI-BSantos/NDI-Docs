@@ -235,5 +235,5 @@
 
 ## ℹ️ Glossary
 
-* [Technical Terminology](glossary/technical-terminology.md)
+* [Industry Standard Terminology](glossary/industry-standard-terminology.md)
 * [NDI Terminology](glossary/ndi-terminology.md)

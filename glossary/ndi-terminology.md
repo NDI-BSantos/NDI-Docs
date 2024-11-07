@@ -1,7 +1,5 @@
 # NDI Terminology
 
-## NDI Terminology
-
 ### Bridge
 
 An NDI Tool that allows you to connect and share NDI streams between remote NDI infrastructures across a WAN.
@@ -22,10 +20,6 @@ A version of NDI bridge capable of connecting an NDI stream from an embedded NDI
 
 Two specific video codecs which are used for the NDI HX formats
 
-### High Bandwidth
-
-In an NDI system usually refers to a Speed HQ based NDI stream. Potentially could refer to the NDI sender to sending a proxy or a full stream.
-
 ### Input/Output
 
 A sender or receiver, typically audio and/or video, that can be connected to another device, potentially something other than NDI but able to send or receive NDI streams. A single NDI sender/receiver can support multiple inputs and outputs and each of which could support audio, video, metadata or a combination. This is part of the negotiation between receiver and sender.&#x20;
@@ -45,6 +39,18 @@ NDI genlock supports using an NDI signal as a timing reference for software appl
 ### NDI Groups
 
 A way to organize NDI devices to filter NDI senders using NDI discovery service for easier management and discovery
+
+### NDI High Bandwidth
+
+In an NDI system usually refers to a Speed HQ based NDI stream. Potentially could refer to the NDI sender to sending a proxy or a full stream.
+
+### NDI HX
+
+Encompasses all previous versions of HX.
+
+### NDI HX3
+
+An NDI premium product and one of our high efficiency formats.
 
 ### NDI Tools Router
 
