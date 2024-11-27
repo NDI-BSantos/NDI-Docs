@@ -1,7 +1,7 @@
 # Dynamic Bandwidth Adjustment
 
 {% hint style="danger" %}
-For access to to this feature please contact [support@ndi.video)](mailto:support@ndi.video)&#x20;
+For access to to this feature please contact [support@ndi.video](mailto:support@ndi.video)
 {% endhint %}
 
 Beginning with NDI 6.1, the Advanced SDK includes a new API that lets you change the receive bandwidth of a video stream. Previously, switching between ‘program quality’ and ‘preview quality’ video streams required you to create two separate receiver instances using the `NDIlib_recv_bandwidth_highest` and `NDIlib_recv_bandwidth_lowest` fields, respectively.
