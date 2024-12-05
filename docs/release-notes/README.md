@@ -4,6 +4,59 @@
 **These release notes refer to changes in our complete technology, including the SDKs, NDI Tools, and any other items. Take your time to comb through the documentation and decide what is more relevant for your specific context.**
 {% endhint %}
 
+### NDI 6.1.0&#x20;
+
+**SDK**&#x20;
+
+* **FPGA** improvements.
+* Added support for **16-bit** color formats on FPGA platforms.&#x20;
+* Introduced encoder support for **planar alpha**.&#x20;
+* Added support for new **packed and semi-planar** video formats.&#x20;
+* Implemented **64-bit addressing in raw audio/video input and output logic**. For more details, refer to the **ChangeLog** files.&#x20;
+* The **Advanced SDK** now features a new **API** that enables dynamic adjustment of the received bandwidth for NDI video streams. For more information, please consult the [Advanced SDK](https://docs.ndi.video/docs/advanced-sdk/introduction)[ documentation](https://docs.ndi.video/docs/advanced-sdk/introduction).&#x20;
+* Added **new audio conversion utility API**s for `NDIlib_audio_frame_v3_t` structure.&#x20;
+* Made **improvements to the** [**SpeedHQ**](https://docs.ndi.video/docs/white-paper/encoding-and-decoding#speedhq-compression) **codec** to verify the correctness of the bitstream before decompression.&#x20;
+
+**SDK - Fixes**
+
+* Fixed incorrect **HDR color information in MOV files** recorded using the NDI Recorder utility.&#x20;
+* Addressed an issue where the NDI library took longer than expected to unload in specific scenarios.&#x20;
+* Addressed a potential frame drop issue with [NDI HX](https://docs.ndi.video/docs/white-paper/encoding-and-decoding#ndi-hx) streams under specific conditions.&#x20;
+* General improvements to the [Reliable UDP protocol](https://docs.ndi.video/docs/white-paper/ndi-protocols#reliable-udp-ndi-v5).  &#x20;
+
+**NDI Tools**
+
+* [**NDI Tools launcher**](https://ndi.video/tools/) **layout and style improvements**. (macOS and Windows).&#x20;
+* The [NDI Virtual Input](https://docs.ndi.video/guides/guides/tools-for-mac/virtual-input) app on macOS has been updated to utilize **modern system extensions introduced in macOS Sonoma 14.1**.&#x20;
+* [All NDI Tools](https://docs.ndi.video/guides/guides/tools-for-windows/all-ndi-tools-for-windows) apps on **Windows** have been updated to use **.NET 8.**&#x20;
+
+**NDI Tools - NDI Bridge**
+
+* A **connection test feature** was added to determine optimal buffer delay settings for your network.
+* Introduced a **dedicated statistics window** with timeline graphs to monitor system and bridge usage.
+* Added a **logging window with support for log-level filters** to view bridge logs more effectively.
+* **Local mode** now includes an option to configure the **local send group for bridge sources**.&#x20;
+
+**NDI Tools - New Utilities**
+
+* The <mark style="color:red;">NDI Bridge Service</mark> is now [available for free download](https://ndi.video/tools/bridge-service/) on the NDI website. It allows you to run [NDI Bridge](https://docs.ndi.video/guides/guides/tools-for-windows/bridge) **in a headless mode as a Windows service**. Please refer to the documentation for more details.&#x20;
+* The [NDI Free Audio](https://docs.ndi.video/guides/guides/utilities/ndi-free-audio) utility is now [available for free download](https://ndi.video/tools/free-audio/) on Windows and Linux via the NDI website. It also includes **enhanced ASIO support for Windows** devices.&#x20;
+* The **NDI Analysis** tool has been improved to include additional information about NDI stream timings when exporting to a CSV file. Please refer to the [NDI Analysis documentation](https://docs.ndi.video/guides/guides/utilities/analysis) for more details.&#x20;
+
+**NDI Tools - Fixes**
+
+* [NDI Access Manager ](https://docs.ndi.video/guides/guides/tools-for-mac/access-manager)(macOS) now supports inputting **multiple discovery server IP addresses**.
+* Corrected an issue in [NDI Router ](https://docs.ndi.video/guides/guides/tools-for-mac/router)(macOS) where **HDR** images were not rendered properly in the preview.
+* Resolved a potential exception in the source menu of [NDI Router ](https://docs.ndi.video/guides/guides/tools-for-mac/router)(macOS) when parsing NDI sources.
+* Resolved an issue where [NDI Bridge ](https://docs.ndi.video/guides/guides/tools-for-windows/bridge)failed to auto-start in **Local** **mode**.
+* Fixed a potential deadlock when closing an [NDI Bridge](https://docs.ndi.video/guides/guides/tools-for-windows/bridge) stream in **Join** **mode**.
+* Corrected **NDI Test Patterns** to ensure the full **Rec.709** color range is output for imported images (Windows).
+* Fixed an issue with [NDI Remote](https://docs.ndi.video/guides/guides/tools-for-windows/remote) when enumerating system audio devices.&#x20;
+* Resolved a potential issue in [NDI Studio Monitor](https://docs.ndi.video/guides/guides/tools-for-windows/studio-monitor) when rendering test patterns with alpha transparency.
+* Enabled high bit-depth decoding in [NDI Studio Monitor](https://docs.ndi.video/guides/guides/tools-for-windows/studio-monitor) for streams with **BT.2020 color primaries**.
+* Added support for higher color depth when playing **SDR files using the VLC player** with the NDI output plugin enabled.
+* Fixed audio driver stability issues with [NDI Webcam](https://docs.ndi.video/guides/guides/tools-for-windows/webcam-input).&#x20;
+
 ### NDI 6.0.1
 
 #### **NDI Tools - HDR**
