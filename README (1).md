@@ -16,7 +16,7 @@ layout:
 
 This White Paper offers a compressed overview of NDI: its value and place in the future of video, and the technology's fundamental features, protocols, and settings.\
 \
-It is updated in real-time by the NDI team to reflect the most recent developments to our Core Tech Platform. **The current version of NDI is 6.01.**
+It is updated in real-time by the NDI team to reflect the most recent developments to our Core Tech Platform. **The current version of NDI is 6.1.**
 
 
 
@@ -24,11 +24,7 @@ It is updated in real-time by the NDI team to reflect the most recent developmen
 
 ## What is NDI?
 
-<div align="center" data-full-width="false">
-
-<figure><img src=".gitbook/assets/NDI Black Logo Alpha 720p.gif" alt="NDI logo animation"><figcaption></figcaption></figure>
-
-</div>
+<div align="center" data-full-width="false"><figure><img src=".gitbook/assets/NDI Black Logo Alpha 720p.gif" alt="NDI logo animation"><figcaption></figcaption></figure></div>
 
 **NDI** stands for **Network Device Interface**. It is a widely adopted video connectivity standard based on proprietary IP networking specifications.\
 \
@@ -38,7 +34,7 @@ NDI operates bi-directionally, with many streams on a shared connection. Its enc
 \
 NDI can be integrated and/or supported by any network-connected product, including video cameras, graphics systems, video mixers, capture cards, multimedia players, video editing applications, and many other devices and software.\
 \
-NDI _is not_ a codec. NDI supports many different video codecs, like our proprietary SpeedHQ, found on the NDI High Bandwidth format, [AVC (H.264)](https://en.wikipedia.org/wiki/Advanced\_Video\_Coding) and [HEVC (H.265)](https://en.wikipedia.org/wiki/High\_Efficiency\_Video\_Coding), found on the NDI HX formats. Different NDI formats correspond to specifications related to codecs supported, bandwidth spending, glass-to-glass latency, and image quality.
+NDI _is not_ a codec. NDI supports many different video codecs, like our proprietary SpeedHQ, found on the NDI High Bandwidth format, [AVC (H.264)](https://en.wikipedia.org/wiki/Advanced_Video_Coding) and [HEVC (H.265)](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding), found on the NDI HX formats. Different NDI formats correspond to specifications related to codecs supported, bandwidth spending, glass-to-glass latency, and image quality.
 
 ##
 
@@ -74,11 +70,7 @@ This is the next iteration of the world of video, audio, and media: _a connected
 
 
 
-<div data-full-width="false">
-
-<figure><img src=".gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src=".gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ## The value of NDI
 
