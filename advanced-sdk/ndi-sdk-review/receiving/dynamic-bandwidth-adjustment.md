@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Dynamic Bandwidth Adjustment
 
 {% hint style="danger" %}
