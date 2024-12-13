@@ -22,7 +22,7 @@
 * Fixed incorrect **HDR color information in MOV files** recorded using the NDI Recorder utility.&#x20;
 * Addressed an issue where the NDI library took longer than expected to unload in specific scenarios.&#x20;
 * Addressed a potential frame drop issue with [NDI HX](https://docs.ndi.video/docs/white-paper/encoding-and-decoding#ndi-hx) streams under specific conditions.&#x20;
-* General improvements to the [Reliable UDP protocol](https://docs.ndi.video/docs/white-paper/ndi-protocols#reliable-udp-ndi-v5).  &#x20;
+* General improvements to the [Reliable UDP protocol](https://docs.ndi.video/docs/white-paper/ndi-protocols#reliable-udp-ndi-v5). &#x20;
 
 **NDI Tools**
 
@@ -39,7 +39,7 @@
 
 **NDI Tools - New Utilities**
 
-* The <mark style="color:red;">NDI Bridge Service</mark> is now [available for free download](https://ndi.video/tools/bridge-service/) on the NDI website. It allows you to run [NDI Bridge](https://docs.ndi.video/guides/guides/tools-for-windows/bridge) **in a headless mode as a Windows service**. Please refer to the documentation for more details.&#x20;
+* The **NDI Bridge Service** is now [available for free download](https://ndi.video/tools/bridge-service/) on the NDI website. It allows you to run [NDI Bridge](https://docs.ndi.video/guides/guides/tools-for-windows/bridge) **in a headless mode as a Windows service**. Please refer to the documentation for more details.&#x20;
 * The [NDI Free Audio](https://docs.ndi.video/guides/guides/utilities/ndi-free-audio) utility is now [available for free download](https://ndi.video/tools/free-audio/) on Windows and Linux via the NDI website. It also includes **enhanced ASIO support for Windows** devices.&#x20;
 * The **NDI Analysis** tool has been improved to include additional information about NDI stream timings when exporting to a CSV file. Please refer to the [NDI Analysis documentation](https://docs.ndi.video/guides/guides/utilities/analysis) for more details.&#x20;
 
@@ -56,6 +56,10 @@
 * Enabled high bit-depth decoding in [NDI Studio Monitor](https://docs.ndi.video/guides/guides/tools-for-windows/studio-monitor) for streams with **BT.2020 color primaries**.
 * Added support for higher color depth when playing **SDR files using the VLC player** with the NDI output plugin enabled.
 * Fixed audio driver stability issues with [NDI Webcam](https://docs.ndi.video/guides/guides/tools-for-windows/webcam-input).&#x20;
+
+**NDI Tools - Known Issues**
+
+* As of the 6.1 release NDI Virtual Input may stop functioning after a few seconds on certain macOS platforms
 
 ### NDI 6.0.1
 
