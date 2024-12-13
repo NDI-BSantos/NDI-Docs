@@ -100,6 +100,10 @@ A packet, also known as a frame or datagram, is a unit of data transmitted over 
 
 A port is a communications channel for data transmission to and from a computer on a network. Each port is identified by a 16-bit number between 0 and 65535, with each process, application, or service using a specific port, or multiple ports, for data transmission.
 
+### PPS (Picture Parameter Set NALU)
+
+Details a decoder needs to decode the video data, such as resolution, frame rate, and other parameters. They must be included in the video stream for the decoder to interpret the video correctly.
+
 ### QoS
 
 QoS (Quality of Service) is the measure of performance for systems or networks, with considerations that include availability, bandwidth, latency, and reliability. QoS can also refer to prioritizing network traffic to ensure a minimum or required level of service, predictability, and/or control.
@@ -108,6 +112,10 @@ QoS (Quality of Service) is the measure of performance for systems or networks, 
 
 1. A networking device capable of transporting IP data based on Layer 3 details (IP Address and subnet details).
 2. An SDI router (Serial Digital Interface router) is a device used to route and manage video signals in broadcast and production environments. It allows multiple SDI video sources, such as cameras, servers, and playback devices, to connected to and switch between various destinations, such as monitors, recorders, or live feeds.
+
+### SPS (Sequence Parameter Set NALU)
+
+Details a decoder needs to decode the video data, such as resolution, frame rate, and other parameters. They must be included in the video stream for the decoder to interpret the video correctly.
 
 ### Subnet
 
@@ -131,4 +139,3 @@ WAN (Wide Area Network) is a network that spans a relatively broad geographical 
 
 ***
 
-##
