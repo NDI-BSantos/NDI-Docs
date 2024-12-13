@@ -1,5 +1,9 @@
 # NDI Terminology
 
+### Annex-B
+
+This format specifies that each NAL unit must be prefixed with a start code (usually a sequence of bytes like 0x000001). This start code helps the decoder identify the beginning of each <mark style="color:red;">NAL</mark> unit.
+
 ### Bridge
 
 An NDI Tool that allows you to connect and share NDI streams between remote NDI infrastructures across a WAN.
@@ -27,6 +31,10 @@ A sender or receiver, typically audio and/or video, that can be connected to ano
 {% hint style="warning" %}
 _The terms input and output should be avoided in an NDI context and the terms Sender and Receiver should be used instead as these are NDI standard terms_
 {% endhint %}
+
+### NAL/NALU (Network Abstraction Layer Unit)
+
+Basic unit of data transmission in H.264/H.265 systems
 
 ### NDI Finder
 
