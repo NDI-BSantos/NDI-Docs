@@ -2,7 +2,7 @@
 
 ### Cache
 
-[Cache ](#user-content-fn-1)[^1]refers to a reserved section of computer memory or an independent high-speed storage device used to accelerate access and retrieval of commonly used data.
+Cache refers to a reserved section of computer memory or an independent high-speed storage device used to accelerate access and retrieval of commonly used data.
 
 ### Channel
 
@@ -132,5 +132,3 @@ WAN (Wide Area Network) is a network that spans a relatively broad geographical 
 ***
 
 ##
-
-[^1]: this word is pronounced 'cash'
