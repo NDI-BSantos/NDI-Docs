@@ -2,7 +2,7 @@
 
 ### Cache
 
-Cache refers to a reserved section of computer memory or an independent high-speed storage device used to accelerate access and retrieval of commonly used data.
+[Cache ](#user-content-fn-1)[^1]refers to a reserved section of computer memory or an independent high-speed storage device used to accelerate access and retrieval of commonly used data.
 
 ### Channel
 
@@ -119,7 +119,7 @@ TCP (Transmission Control Protocol) is a network communications protocol that en
 
 ### TTL
 
-**Time to live** (**TTL**) or **hop limit** is a mechanism that limits the lifespan or lifetime of data in a computer or network. TTL may be implemented as a [counter](https://en.wikipedia.org/wiki/Counter\_\(digital\)) or [timestamp](https://en.wikipedia.org/wiki/Timestamp) attached to or embedded in the data. Once the prescribed event count or timespan has elapsed, data is discarded or revalidated. In [computer networking](https://en.wikipedia.org/wiki/Computer\_networking), TTL prevents a data packet from circulating indefinitely. In [computing](https://en.wikipedia.org/wiki/Computing) applications, TTL is commonly used to improve performance and manage the [caching](https://en.wikipedia.org/wiki/Cache\_\(computing\)) of data.
+**Time to live** (**TTL**) or **hop limit** is a mechanism that limits the lifespan or lifetime of data in a computer or network. TTL may be implemented as a [counter](https://en.wikipedia.org/wiki/Counter_\(digital\)) or [timestamp](https://en.wikipedia.org/wiki/Timestamp) attached to or embedded in the data. Once the prescribed event count or timespan has elapsed, data is discarded or revalidated. In [computer networking](https://en.wikipedia.org/wiki/Computer_networking), TTL prevents a data packet from circulating indefinitely. In [computing](https://en.wikipedia.org/wiki/Computing) applications, TTL is commonly used to improve performance and manage the [caching](https://en.wikipedia.org/wiki/Cache_\(computing\)) of data.
 
 ### UDP
 
@@ -132,3 +132,5 @@ WAN (Wide Area Network) is a network that spans a relatively broad geographical 
 ***
 
 ##
+
+[^1]: this word is pronounced 'cash'
